@@ -11,9 +11,16 @@ This Laravel project includes the following components as per the assignment ins
   - [StartBootstrap - Personal](https://startbootstrap.com/theme/personal)
 - Converted into:
     - `resources/views/layouts/app.blade.php` for the main layout.
+- Partials :
+    - `resources/views/partials/header.blade.php` for the header.
+    - `resources/views/partials/footer.blade.php` for the footer.
+- Pages :
     - `resources/views/home.blade.php` for the home page.
-    
-  - Page views extend the layout using `@extends`.
+    - `resources/views/contact.blade.php` for the contact page.
+    - `resources/views/projects.blade.php` for the projects page.
+    - `resources/views/resume.blade.php` for the resume page.
+- Contact page includes a form that submits data.
+- All pages extend the main layout using `@extends('layouts.app')`.
 
 ## ✅ 2. Database Migrations
 
@@ -33,5 +40,10 @@ This Laravel project includes the following components as per the assignment ins
   - Displays a **success message** using `session()->flash()`.
   - Logs user input using `Log::info()` into Laravel's log file.
   - Redirects to a **confirmation page** that shows the submitted data.
+
+- Confirmation page:
+  - `resources/views/confirmation.blade.php`
+  - Displays the submitted data.
+  - Uses `@extends('layouts.app')` to extend the main layout.
 
 
