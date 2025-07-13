@@ -24,6 +24,7 @@ This Laravel project includes the following components as per the assignment ins
   - `invoices` table
   - `invoice_products` table
 - Each table in the schema is defined using Laravel migration files in the `database/migrations` folder.
+- Folder Link: (https://github.com/AriyaArKa/MDL-16/tree/main/myproject/database/migrations)
 
 ## ✅ 3. Form Handling (e.g., Contact Form)
 
